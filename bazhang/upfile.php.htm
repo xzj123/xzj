@@ -1,0 +1,18 @@
+<html><head><meta http-equiv=Content-Type content='text/html; charset=utf-8'></head>
+<style>body{margin: 0;padding: 0;}</style>
+<iframe class="file" width="158" height="43" scrolling="no"
+        src="searchimage.php-token=ac1d53f6076541fa329485860fdeff27&filenum=1&_vv=vr&domid=test&e=changePicupfile(obj,1)&action=searchimage" tppabs="http://upfile.justeasy.cn/searchimage.php?token=ac1d53f6076541fa329485860fdeff27&filenum=1&_vv=vr&domid=test&e=changePicupfile(obj,1)&action=searchimage"
+        frameborder="0"></iframe>
+<script>
+    document.domain = "http://www.justeasy.cn/Home/sotu/justeasy.cn";
+    /* 以图搜图 搜索框 上传图片 */
+    function changePicupfile(obj,id){
+        if(obj.status == 200){
+            top.location.href='http://www.justeasy.cn/Sotu/so.html?imgurl='+obj.filename;
+        }else{
+            layer.msg(obj.msg,{time:2000},function(){
+                top.location.reload();
+            });
+        }
+    }
+</script>
